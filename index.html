@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirth Raval</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>Tirth Raval</h1>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#socials">Socials</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="content">
+                <div class="text">
+                    <p>I am an Analytics graduate with a strong foundation in business decision-making and a passion for data-driven solutions. I have enhanced my expertise as a Credit Counselor at CIBC, where I provided expert guidance to clients, assisting them with their credit needs while refining my analytical skills.</p>
+                    <p>I am now seeking to transition into a data-centric role where I can leverage my analytical abilities and business acumen to drive decision-making and deliver value. I am particularly interested in opportunities in data analysis, business intelligence, and related fields where I can contribute to data-driven strategies and decision-making processes.</p>
+                    <p>My skills include:
+                            <ul>
+                                <li><b>Excel:</b> Creating pivot tables and charts to visualize data effectively.</li>
+                                <li><b>SQL:</b> Managing and creating relational databases.</li>
+                                <li><b>Power BI:</b> Combining data and creating comprehensive dashboards.</li>
+                                <li><b>Python:</b> Utilizing key libraries to manipulate data and perform descriptive statistics.</li>
+                                <li><b>R:</b> Conducting data analysis and statistical computing.</li>
+                                <li><b>Tableau:</b> Developing interactive data visualizations and dashboards.</li>
+                            </ul>
+                    </p>
+                    <p>I am eager to contribute to innovative solutions and deliver actionable insights as part of a dynamic team in an entry-level position.</p>
+                </div>
+                <div class="image">
+                    <img src="assests/profile-pic.jpg" alt="Tirth Raval">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section  -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>To know more about me and download my resume, click the button below!</h2>
+            <div class="contact-button">
+                <button><a href="#socials">Get in touch</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+
+
+            <div class="projects">
+                <div class="project">
+                    <a href="https://github.com/tirthravaal/data-industry-breakdown-dashboard">
+                    <img src="assests/data-industry.jpg" alt="Data Industry Breakdown Dashboard" height="300px">
+                    <div class="overlay">
+                        <div class="ptext"><h2>Dashboard</h2><br>Performance of important KPI's</div>
+                    </div>
+                </div>
+                </a>
+
+                <div class="project">
+                    <a href="https://github.com/tirthravaal/formula1-Exploratory-Data-Analysis">
+                    <img src="assests/formula1.png" alt="Formula 1 - Exploratory Data Analysis" height="300px">
+                    <div class="overlay">
+                        <div class="ptext"><h2>Formula 1 - Exploratory Data Analysis</h2><br>This project presents an Exploratory Data Analysis (EDA) of the Formula 1 2023 season race results. It offers insights into driver and team performances, race outcomes, and key statistics. Key analyses include identifying top drivers by track, average driver positions, team podium finishes, and the impact of starting grid positions. This comprehensive analysis aids in evaluating performance, strategic planning, and provides valuable insights for fans and analysts. The project showcases proficiency in aggregations, window functions, and data visualization.</div>
+                    </div>
+                </div>
+                </a>
+
+                <div class="project">
+                    <a href="https://github.com/tirthravaal/mortgage-amortization-calculator">
+                    <img src="assests/mortgage.png" alt="Mortgage Amortization Calculator">
+                    <div class="overlay">
+                        <div class="ptext"><h2>Mortgage Amortization Calculator</h2><br>This repository features an Excel-based Mortgage Calculator designed to compute monthly mortgage payments, total payments, and total interest for a given loan. It includes a comprehensive amortization table, breaking down each payment into principal and interest components. The calculator utilizes the PMT formula, along with Excel functions like SUM and cell referencing, to dynamically update calculations based on user inputs. Additional features include property taxes, HOA fees, and property insurance, providing a holistic view of monthly housing costs, aiding in better financial planning and decision-making.</div>
+                    </div>
+                </div>
+                </a>
+                </div>
+            </div>
+    </section>
+
+    <section id="socials">
+        <div class="container">
+            <div class="social">
+                <h3>Download CV</h3>
+                <button class="CV-container color-1" onclick="window.open('./assests/resume.pdf')">Download CV</button>
+            </div>
+            <div class="social">
+                <h3>LinkedIn</h3>
+                <div id="socials-container">
+                    <img src="./assests/linkedin.svg" alt="My LinkedIn profile" class="icon" onclick="location.href='http://www.linkedin.com/in/tirth-raval-linked2'">
+                </div>
+            </div>
+            <div class="social">
+                <h3>GitHub</h3>
+                <div id="socials-container">
+                    <img src="./assests/github.svg" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/tirthravaal'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="email-icon-container">
+                <img src="./assests/email.png" alt="Email Icon" class="email-icon icon">
+                <p><a href="mailto:tirthraval98@gmail.com">tirthraval98@gmail.com</a></p>
+            </div>
+            <p>Copyright &#169; 2024 Tirth Raval. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

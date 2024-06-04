@@ -1,0 +1,480 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF; /* White Background */
+    color: #000000; /* Black Text */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: #000000; /* Black Background */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    display: inline-block;
+    color: #FFFFFF; /* White Text */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #FFFFFF; /* White Text */
+    font-size: 16px;
+}
+
+.menu-icon {
+    display: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+section {
+    padding: 100px 0 2em 0; /* Add top padding to prevent content from being hidden behind the fixed header */
+}
+
+.about {
+    background-color: #F4F0EC; /* Isabelline Background */
+    /* padding: 3em 0; */
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: -50px; */
+}
+
+.about .text {
+    flex: 1;
+    margin-right: 2em;
+}
+
+.about .text h2 {
+    margin-bottom: 1em;
+}
+
+.about .text p {
+    margin-bottom: 1em;
+}
+
+.about .text .signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2em;
+}
+
+.about .image {
+    flex: 1;
+}
+
+.about .image img {
+    width: 100%;
+    border-radius: 1px;
+    height: 500px;
+    width: 400px;
+}
+
+.portfolio {
+    background-color: #FFFFFF; /* White Background */
+    padding: 3em 0;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    position: relative;
+    width: 48%;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFFFFF; /* White Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+.ptext {
+    color: #FFFFFF; /* White Text */
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact {
+    background-color: #000000; /* Black Background */
+    padding: 3em 0;
+    text-align: center;
+    color: #FFFFFF; /* White Text */
+}
+
+.contact h2 {
+    margin-bottom: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact .contact-button button {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    background-color: #FFFFFF; /* White */
+    color: #000000; /* Black */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact {
+    background-color: #000000; /* Black */
+    color: #FFFFFF; /* White */
+}
+
+.contact .contact-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.contact .contact-info img {
+    margin: 0 1em;
+    width: 40%;
+    border-radius: 8px;
+}
+
+#socials {
+    background: #000000; /* Black Background */
+    color: #FFFFFF; /* White Text */
+    padding: 60px 0;
+}
+
+#socials .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.social {
+    flex: 1;
+}
+
+.social h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.CV-container {
+    background: none;
+    border: 2px solid #FFFFFF; /* White */
+    color: #FFFFFF; /* White */
+    padding: 10px 20px;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.CV-container:hover {
+    background: #FFFFFF; /* White */
+    color: #000000; /* Black */
+}
+
+.button-container {
+    background: none;
+    color: #FFFFFF; /* White */
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-container:hover {
+    background: #FFFFFF; /* White */
+    color: #000000; /* Black */
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#socials-container img {
+    width: 40px; /* Adjust the size of the icons */
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#socials-container img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icons on hover */
+}
+
+footer {
+    background-color: #000000; /* Black Background */
+    color: #FFFFFF; /* White Text */
+    text-align: center;
+    padding: 1em 0;
+}
+
+.email-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #FFFFFF;
+}
+
+.email-icon {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+
+    header {
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #000000; /* Black Background */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        padding: 10px;
+        width: 100%;
+        display: block;
+        color: #FFFFFF; /* White Text */
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    section {
+        padding: 80px 0 2em 0;
+    }
+
+    .about .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .text, .about .image {
+        max-width: 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for mobile phones and smaller screens */
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    header nav ul a {
+        font-size: 14px;
+    }
+
+    .about .text h2 {
+        font-size: 20px;
+    }
+
+    .about .text p, .about .text .signature {
+        font-size: 14px;
+    }
+
+    .about .image img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .contact h2 {
+        font-size: 18px;
+    }
+
+    .contact .contact-button button {
+        font-size: 1em;
+        padding: 0.8em 1.5em;
+    }
+
+    .social h3 {
+        font-size: 20px;
+    }
+
+    .CV-container, .button-container {
+        padding: 8px 16px;
+    }
+
+    .overlay {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    /* Styles for landscape viewports up to 1024px width */
+
+    header {
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header nav ul {
+        display: none;
+        width: 100%;
+        background: #000000; /* Black Background */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        padding: 10px;
+        width: 100%;
+        display: block;
+        color: #FFFFFF; /* White Text */
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    section {
+        padding: 100px 0 2em 0;
+    }
+
+    .about .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .text h2 {
+        font-size: 22px;
+    }
+
+    .about .text p, .about .text .signature {
+        font-size: 16px;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
