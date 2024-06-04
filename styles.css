@@ -391,7 +391,7 @@ footer a {
 
     .about .image img {
         height: auto; /* Adjusted to auto to maintain aspect ratio */
-        max-height: 300px; /* Ensure it doesn't exceed 300px */
+        /*max-height: 300px; /* Ensure it doesn't exceed 300px */
         width: 100%;
     }
 
